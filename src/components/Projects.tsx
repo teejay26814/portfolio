@@ -6,12 +6,12 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    title: "Gym Subscription Renewal Automation",
+    title: "Plumbing Co — AI Customer Support Operation",
     description:
-      "An n8n workflow that onboards new gym members via webhook, stores their details and profile photo in Airtable, then runs a daily check that sends renewal reminders, updates membership status (Active / Expiring Soon / Expired), and emails a confirmation once a member renews.",
-    tags: ["n8n", "Airtable", "Gmail", "WhatsApp"],
-    image: "/projects/gym-renewal-n8n-workflow.png",
-    link: "https://www.loom.com/share/8a2d52b69c954d5e8025cdb761382e59",
+      "An all-in-one AI assistant for a plumbing business, unifying website chat and Telegram into one flow. It answers from a live Pinecone knowledge base (services, pricing, policies), checks Google Calendar availability and books appointments, captures leads straight into Airtable, and detects emergencies (gas leaks, burst pipes) to escalate instantly via Gmail and Telegram. A nightly 3am workflow syncs the knowledge base from Google Drive automatically — 29 connected nodes across 3 coordinated workflows.",
+    tags: ["n8n", "Claude (OpenRouter)", "Pinecone", "Google Calendar", "Airtable", "Telegram"],
+    image: "/projects/plumbing-co/plumbing-co-n8n-workflow.jpg",
+    link: "https://www.loom.com/share/163727ff41794a7f81e0797f518ea7ec",
   },
   {
     title: "CareBridge Africa — AI Health Triage Bot",
@@ -22,28 +22,28 @@ const projects = [
     link: "https://www.loom.com/share/e19a0e0ffc904da5954b56172a6aafe7",
   },
   {
-    title: "AI Email Classification & Routing",
-    description:
-      "An n8n workflow that watches a Gmail inbox and uses an AI agent (OpenRouter) to read each new email and classify it into Sales, Customer Support, Human Resources, Finance, Operations, or Other. A Switch node then routes each email to the matching sub-workflow for handling, so nothing sits unsorted in a shared inbox.",
-    tags: ["n8n", "Gmail API", "OpenRouter", "AI Agent"],
-    image: "/projects/email-classifier/email-classifier-n8n-workflow.png",
-    link: "https://www.loom.com/share/3506d5cf541249588028af66a4403aeb",
-  },
-  {
-    title: "Plumbing Co — AI Customer Support Operation",
-    description:
-      "An all-in-one AI assistant for a plumbing business, unifying website chat and Telegram into one flow. It answers from a live Pinecone knowledge base (services, pricing, policies), checks Google Calendar availability and books appointments, captures leads straight into Airtable, and detects emergencies (gas leaks, burst pipes) to escalate instantly via Gmail and Telegram. A nightly 3am workflow syncs the knowledge base from Google Drive automatically — 29 connected nodes across 3 coordinated workflows.",
-    tags: ["n8n", "Claude (OpenRouter)", "Pinecone", "Google Calendar", "Airtable", "Telegram"],
-    image: "/projects/plumbing-co/plumbing-co-n8n-workflow.jpg",
-    link: "https://www.loom.com/share/163727ff41794a7f81e0797f518ea7ec",
-  },
-  {
     title: "Mama Tee's Kitchen — Voice AI Ordering Agent",
     description:
       "A VAPI voice assistant that answers every inbound call for a Nigerian restaurant, trained on the full menu, prices, opening hours, delivery zones, payment methods, and FAQs. An n8n workflow receives the call outcome via webhook, parses intent, and routes it through a Switch node into three Airtable tables — Orders, Reservations, and Callbacks — logging customer name, phone number, items, order type, delivery address, and timestamp in real time. Zero missed calls, zero manual note-taking.",
     tags: ["VAPI", "n8n", "Airtable", "GPT-4.1", "Deepgram", "Webhooks"],
     image: "/projects/mama-tees-kitchen/mama-tees-kitchen-n8n-workflow.jpg",
     link: "https://www.loom.com/share/ea30fe4186154e5bb8aff2af29feab72",
+  },
+  {
+    title: "Gym Subscription Renewal Automation",
+    description:
+      "An n8n workflow that onboards new gym members via webhook, stores their details and profile photo in Airtable, then runs a daily check that sends renewal reminders, updates membership status (Active / Expiring Soon / Expired), and emails a confirmation once a member renews.",
+    tags: ["n8n", "Airtable", "Gmail", "WhatsApp"],
+    image: "/projects/gym-renewal-n8n-workflow.png",
+    link: "https://www.loom.com/share/8a2d52b69c954d5e8025cdb761382e59",
+  },
+  {
+    title: "AI Email Classification & Routing",
+    description:
+      "An n8n workflow that watches a Gmail inbox and uses an AI agent (OpenRouter) to read each new email and classify it into Sales, Customer Support, Human Resources, Finance, Operations, or Other. A Switch node then routes each email to the matching sub-workflow for handling, so nothing sits unsorted in a shared inbox.",
+    tags: ["n8n", "Gmail API", "OpenRouter", "AI Agent"],
+    image: "/projects/email-classifier/email-classifier-n8n-workflow.png",
+    link: "https://www.loom.com/share/3506d5cf541249588028af66a4403aeb",
   },
 ];
 
