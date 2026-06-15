@@ -64,7 +64,7 @@ export default function Hero() {
           className="order-first mx-auto h-56 w-56 overflow-hidden rounded-full border-2 border-border p-1 sm:h-72 sm:w-72 md:order-2 md:ml-auto md:h-80 md:w-80"
         >
           <Image
-            src="/headshot.jpg"
+            src="/headshot.png"
             alt="Fatoyinbo Tolulope Joseph"
             width={320}
             height={320}
