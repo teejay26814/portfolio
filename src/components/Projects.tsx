@@ -22,6 +22,14 @@ const projects = [
     link: "https://www.loom.com/share/e19a0e0ffc904da5954b56172a6aafe7",
   },
   {
+    title: "AI CRM — Lead Capture & Qualification",
+    description:
+      "An n8n-powered AI CRM that captures inbound leads from Telegram, qualifies them instantly using an AI agent (OpenRouter), and automates the entire follow-up cycle. The system detects hot leads in real time and alerts sales reps via Telegram immediately. A scheduled loop re-engages unresponsive leads every 6 hours with context-aware follow-ups. Daily and weekly reports are auto-generated and sent to the team — full pipeline visibility, zero manual tracking.",
+    tags: ["n8n", "Telegram", "OpenRouter", "AI Agent", "Airtable", "Gmail"],
+    image: "/projects/ai-customer-support/ai-customer-support-workflow.jpg",
+    link: "https://www.loom.com/share/d9c75bac77d143eb814f3f84e9ac5754",
+  },
+  {
     title: "Mama Tee's Kitchen — Voice AI Ordering Agent",
     description:
       "A VAPI voice assistant that answers every inbound call for a Nigerian restaurant, trained on the full menu, prices, opening hours, delivery zones, payment methods, and FAQs. An n8n workflow receives the call outcome via webhook, parses intent, and routes it through a Switch node into three Airtable tables — Orders, Reservations, and Callbacks — logging customer name, phone number, items, order type, delivery address, and timestamp in real time. Zero missed calls, zero manual note-taking.",
@@ -36,14 +44,6 @@ const projects = [
     tags: ["n8n", "Airtable", "Gmail", "WhatsApp"],
     image: "/projects/gym-renewal-n8n-workflow.png",
     link: "https://www.loom.com/share/8a2d52b69c954d5e8025cdb761382e59",
-  },
-  {
-    title: "AI Email Classification & Routing",
-    description:
-      "An n8n workflow that watches a Gmail inbox and uses an AI agent (OpenRouter) to read each new email and classify it into Sales, Customer Support, Human Resources, Finance, Operations, or Other. A Switch node then routes each email to the matching sub-workflow for handling, so nothing sits unsorted in a shared inbox.",
-    tags: ["n8n", "Gmail API", "OpenRouter", "AI Agent"],
-    image: "/projects/email-classifier/email-classifier-n8n-workflow.png",
-    link: "https://www.loom.com/share/3506d5cf541249588028af66a4403aeb",
   },
 ];
 
